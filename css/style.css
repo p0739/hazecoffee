@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 img {
-  max-width: 1440px;
   height: auto;
 }
 
@@ -37,7 +36,6 @@ nav {
   #slider_pc img,
   #slider_mo img {
     width: 100%;
-    position: relative;
   }
 
 
