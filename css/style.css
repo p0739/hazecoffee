@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 img {
+  max-width: 1440px;
   height: auto;
 }
 
@@ -23,6 +24,9 @@ img {
   .blog .visual img#pc {
     display: none;
   }
+  .ending section {
+    font-size: 1.2rem;
+  }
 }
 
 /* ---------nav---------- */
@@ -44,8 +48,8 @@ nav {
 
   h1 {
     text-align: center;
-    margin: 30px auto 50px auto;
-    line-height: 50px;
+    margin: 40px auto 40px auto;
+    line-height: 40px;
     width: 95%;
     font-family: "Shippori Mincho", serif;
     font-weight: 500;
@@ -65,9 +69,10 @@ nav {
 
   #introduction p {
     font-family: serif;
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
     text-align: center;
+    font-size: 1.1rem;
   }
 
     /* ---------store_box--------
@@ -151,10 +156,10 @@ nav {
     text-align: center;
   }
   #blog p {
-    color: #3b1a09;
+    
     text-align: center;
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "Shippori Mincho", serif;
   }
 
@@ -176,7 +181,7 @@ nav {
     padding-bottom: 20px;
     padding-top: 20px;
     font-family: serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .twitter-timeline {
@@ -198,12 +203,11 @@ nav {
       font-weight: 600;
     }
 
-/* ---------footer--------
-  -------------------------- */
+/* ---------footer-------- */
 
   footer {
     background-color: #C8C2C6;
-    padding: 20px;
+    padding: 30px;
     position: relative;
   }
 
@@ -228,6 +232,7 @@ nav {
     display: block;
     text-align: center;
     font-size: 0.6rem;
+    color: #fff;
   }
 
   #cup {
@@ -329,6 +334,10 @@ nav {
     width: 400px;
   }
 
+  #blog p {
+    font-size: 1.3rem;
+  }
+
     /* ---------contact--------
   -------------------------- */
 
@@ -342,6 +351,10 @@ nav {
     margin: 100px auto 70px;
   }
 
+  .contact_address {
+    font-size: 1.3rem;
+  }
+
   .blog .visual img#mo {
     display: none;
   }
@@ -350,12 +363,32 @@ nav {
     width: 100%;
   }
 
+  body.ending section {
+    font-size: 1.3rem;
+  }
+
+  body.cosmic section {
+    font-size: 1.3rem;
+  }
+
+  body.ending video,
+  body.cosmic video {
+    width: 80% !important;
+  }
+
+  #close-video {
+    font-size: 5rem;
+    top: -60px;
+    right: 30px;
+  }
+
 }
 
 @media screen and (min-width:1100px) {
   h1 {
     margin-top: 100px;
   }
+
 }
 
 
@@ -377,7 +410,7 @@ nav {
 .modal-content {
   background-color: #fff;
   position: fixed;
-  top: 10%; /* 上から10%の位置に表示 */
+  top: 10%; 
   left: 50%;
   transform: translateX(-50%);
   padding: 20px;
@@ -467,6 +500,10 @@ body.modal-open {
   text-align: start;
   margin-top: 30px;
   font-size: 1.1rem;
+}
+
+.blog .bold {
+  font-weight: bold;
 }
 
 .link_box_1 .back {
@@ -603,7 +640,7 @@ body.modal-open {
     color:rgba(60, 89, 83, 0.5);
   }
 
-  /* --tomoki-- */
+  /* --yuina-- */
 
 .t .title,
 .t h2 {
@@ -632,35 +669,175 @@ a.thanks {
 
 /* --cosmicmagic--- */
 
+
 .cosmic {
-  background-image: url(../img/universe.jpg);
+  background-color: #0C295B;
 }
 
 .cosmic h1 {
-  color: #fff;
-  font-family: "Shippori Mincho", serif;
-  font-size: 2rem;
+  color: rgb(255, 248, 231);
+  font-family: "Orbitron", serif;
+  font-size: 2.2rem;
   margin: 0 auto;
-  padding: 30px;
+  padding: 100px 0 50px 0;
 }
 
 .cosmic section {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(255, 248, 231);
   width: 95%;
   font-family: serif;
   font-size: 1.1rem;
   padding: 20px;
-  text-align: center;
+  padding-top: 60px;
+}
+
+.cosmic section p.cafe{
+  font-size: 0.9rem;
+  padding-top: 40px;
 }
 
 .cosmic small {
-  color: rgba(255, 247, 17, 0.4);
+  color: rgba(255, 248, 231, 0.7);
 }
 
+.cosmic img {
+  margin: 0 auto;
+}
+
+.cosmic footer {
+  background-color: #0C295B;
+}
 .cosmic footer p {
   font-family: "Shippori Mincho", serif;
   font-size: 0.7rem;
-  color: rgba(255, 247, 17, 0.4);
+  color: rgba(255, 248, 231, 0.7);
   text-align: center;
+}
+
+.cosmic .top {
+  text-align: center;
+  margin-top: 30px;
+  margin-top: 100px
+}
+
+.top a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 248, 231, 0.7);
+}
+/* ---share_btn---- */
+
+.twitter-share-button {
+  margin: 0 auto;
+}
+
+.share_btn p {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #FFF8E7;
+  margin-bottom: 10px;
+}
+
+.share_btn {
+  padding: 15px;
+  border: 4px dashed #C8C2C6;
+  width: 260px;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+/* ------ending----------- */
+
+.ending {
+  font-family: "Shippori Mincho", serif;
+}
+
+.ending h1 {
+  font-size: 2.2rem;
+  margin: 60px auto 30px auto;
+  font-family: "Orbitron", serif;
+}
+
+.ending section {
+  text-align: center;
+  margin-inline: auto;
+  margin: 70px 40px 90px 40px;
+  font-size: 1rem;
+}
+
+.share_end{
+  border: 0;
+}
+.share_end p{
+  color: #fff;
+}
+
+.ending footer {
+  background-color: #fff;
+}
+
+.ending footer p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* ---ending video---- */
+
+.overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: -70px;
+  right: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width:990px) and (min-width:426px) {
+
+  #close-video {
+    font-size: 3.5rem;
+    right: 20px;
+  }
+}
+
+/* ---invideo--- */
+
+.invideo {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
 }
